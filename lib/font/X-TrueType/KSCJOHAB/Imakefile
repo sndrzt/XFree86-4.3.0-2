@@ -1,0 +1,4 @@
+XCOMM X-TrueType Server - TrueType rasterizer for X
+XCOMM $XFree86$
+/*#include "Imakefile.inc"*/
+#include <xttMod.tmpl>

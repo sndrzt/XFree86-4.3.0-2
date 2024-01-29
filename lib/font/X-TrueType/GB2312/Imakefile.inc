@@ -1,0 +1,11 @@
+XCOMM $XFree86$
+
+#define ModuleName GB2312
+MODULENAME = ModuleName
+MODULESRCDIR = $(XTTSOURCEDIR)/$(MODULENAME)
+
+SRCS =  main.c GB2312toUCS2.c
+OBJS =  main.o GB2312toUCS2.o
+
+LinkSourceFile(main.c,$(MODULESRCDIR))
+LinkSourceFile(GB2312toUCS2.c,$(MODULESRCDIR))

@@ -1,0 +1,16 @@
+XCOMM $XFree86$
+
+
+all:: Xtrans.PS Xtrans.txt
+
+Xtrans.txt:
+	$(TBL) Xtrans.mm  | $(NROFF) -mm > Xtrans.txt
+
+Xtrans.PS:
+	$(TBL) Xtrans.mm  | $(TROFF) -mm > Xtrans.PS
+
+clean::
+	$(RM) Xtrans.PS Xtrans.txt
+
+InstallRoffDoc(Xtrans)
+

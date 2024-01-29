@@ -1,0 +1,11 @@
+XCOMM $XFree86$
+
+/* code converter: BIG5HKSCS */
+
+#define ModuleName BIG5HKSCS
+SRCS = BIG5HKSCStoUCS2.c main.c
+OBJS = BIG5HKSCStoUCS2.o main.o
+
+#include <xttMod.tmpl>
+
+/* end of file */

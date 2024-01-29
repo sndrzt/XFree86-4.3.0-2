@@ -1,0 +1,6 @@
+XCOMM $XFree86: xc/programs/Xserver/GL/mesa/src/X/Imakefile,v 1.13 2002/02/25 00:45:43 dawes Exp $
+
+#define IHaveModules
+
+#include "../Imakefile"
+

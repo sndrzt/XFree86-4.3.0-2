@@ -1,0 +1,11 @@
+XCOMM $XFree86$
+
+/* code converter: GBK */
+
+#define ModuleName GBK
+SRCS = GBKtoUCS2.c main.c
+OBJS = GBKtoUCS2.o main.o
+
+#include <xttMod.tmpl>
+
+/* end of file */

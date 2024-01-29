@@ -1,0 +1,20 @@
+XCOMM $XFree86: xc/fonts/scaled/Meltho/Imakefile,v 1.2 2003/01/10 13:29:34 eich Exp $
+
+TTFFONTS = GohaTibebZemen.ttf
+OTFFONTS = GohaTibebZemen.otf
+
+TTFINSTDIR = $(FONTDIR)/TTF
+OTFINSTDIR = $(FONTDIR)/OTF
+
+#if UseFreetype2
+MakeFcCache($(TTFFONTS) $(OTFFONTS))
+#endif
+
+InstallMultipleFlags($(TTFFONTS),$(TTFINSTDIR),$(INSTDATFLAGS))
+InstallMultipleFlags($(OTFFONTS),$(OTFINSTDIR),$(INSTDATFLAGS))
+
+#ifdef IHaveSubdirs
+MakeSubdirs($(SUBDIRS))
+DependSubdirs($(SUBDIRS))
+#endif
+

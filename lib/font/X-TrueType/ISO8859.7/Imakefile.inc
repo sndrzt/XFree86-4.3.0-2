@@ -1,0 +1,11 @@
+XCOMM $XFree86$
+
+#define ModuleName ISO8859_7
+MODULENAME = ModuleName
+MODULESRCDIR= $(XTTSOURCEDIR)/ISO8859.7
+
+SRCS =  main.c ISO8859_7toUCS2.c
+OBJS =  main.o ISO8859_7toUCS2.o
+
+LinkSourceFile(main.c,$(MODULESRCDIR))
+LinkSourceFile(ISO8859_7toUCS2.c,$(MODULESRCDIR))

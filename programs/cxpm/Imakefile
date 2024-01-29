@@ -1,0 +1,13 @@
+XCOMM $XFree86: xc/programs/cxpm/Imakefile,v 1.1 1999/01/13 12:17:48 dawes Exp $
+
+/* This is a simplified version of the Imakefile included with the xpm dist */
+
+LOCAL_LIBRARIES = $(XPMLIB) $(XTOOLLIB) $(XLIB)
+        DEPLIBS = $(DEPXPMLIB) $(DEPXTOOLLIB) $(DEPXLIB)
+        CXPMDIR = $(TOP)/extras/Xpm/cxpm
+       INCLUDES = -I$(CXPMDIR)
+
+SimpleProgramTarget(cxpm)
+
+LinkSourceFile(cxpm.c,$(CXPMDIR))
+LinkSourceFile(cxpm.man,$(CXPMDIR))

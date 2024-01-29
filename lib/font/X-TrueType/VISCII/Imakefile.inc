@@ -1,0 +1,11 @@
+XCOMM $XFree86$
+
+#define ModuleName VISCII
+MODULENAME = ModuleName
+MODULESRCDIR= $(XTTSOURCEDIR)/$(MODULENAME)
+
+SRCS =  main.c VISCIItoUCS2.c
+OBJS =  main.o VISCIItoUCS2.o
+
+LinkSourceFile(main.c,$(MODULESRCDIR))
+LinkSourceFile(VISCIItoUCS2.c,$(MODULESRCDIR))

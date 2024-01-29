@@ -1,0 +1,19 @@
+XCOMM $XFree86: xc/programs/Xserver/glxStub/Imakefile,v 1.4 1997/05/11 04:58:51 dawes Exp $
+
+
+
+#include <Server.tmpl>
+
+SRCS = glxstub.c
+
+OBJS = glxstub.o
+
+INCLUDES = -I../include  -I$(XINCLUDESRC) -I$(SERVERSRC)/include
+
+
+NormalLibraryObjectRule()
+NormalLibraryTarget(ServerGlx,$(OBJS))
+LintLibraryTarget(ServerGlx,$(SRCS))
+NormalLintTarget($(SRCS))
+
+DependTarget()

@@ -1,0 +1,12 @@
+XCOMM $XFree86$
+
+#define ModuleName KOI8
+MODULENAME = ModuleName
+MODULESRCDIR= $(XTTSOURCEDIR)/$(MODULENAME)
+
+SRCS =  main.c KOI8_RtoUCS2.c KOI8_UNItoUCS2.c
+OBJS =  main.o KOI8_RtoUCS2.o KOI8_UNItoUCS2.o
+
+LinkSourceFile(main.c,$(MODULESRCDIR))
+LinkSourceFile(KOI8_RtoUCS2.c,$(MODULESRCDIR))
+LinkSourceFile(KOI8_UNItoUCS2.c,$(MODULESRCDIR))

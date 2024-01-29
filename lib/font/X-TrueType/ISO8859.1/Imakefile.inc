@@ -1,0 +1,12 @@
+XCOMM $XFree86$
+
+#define ModuleName ISO8859_1
+MODULENAME = ModuleName
+MODULESRCDIR= $(XTTSOURCEDIR)/ISO8859.1
+
+SRCS =	main.c ISO8859_1toAROMAN.c
+OBJS =	main.o ISO8859_1toAROMAN.o
+
+LinkSourceFile(main.c,$(MODULESRCDIR))
+LinkSourceFile(ISO8859_1toAROMAN.c,$(MODULESRCDIR))
+
